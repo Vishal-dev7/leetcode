@@ -10,9 +10,9 @@ public:
         int j=0;
        while(i<n1 && j<n2)
        {
-        if(i>0 && nums1[i-1]==nums1[i])
+        if(j>0 && nums2[j-1]==nums2[j])
         {
-            i++;
+            j++;
         }
           else if(nums1[i]<nums2[j]){
                i++;
