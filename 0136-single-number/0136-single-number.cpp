@@ -2,21 +2,24 @@ class Solution {
 public:
     int singleNumber(vector<int>& nums) {
         int n=nums.size();
+         unordered_map<int, int> hash;
+        int maxi=nums[0];
         for(int i=0;i<n;i++)
         {
-            int num=nums[i];
-            int cnt=0;
-            for(int j=0;j<n;j++)
+           maxi=max(maxi,nums[i]);
+           hash[maxi]= {0};
+        }
+        for(int i=0;i<n;i++)
+        {
+            hash[nums[i]]++;
+        }
+        for(int i=0;i<n;i++)
+        {
+            if(hash[nums[i]]==1)
             {
-                if(nums[j]==num)
-                {
-                    cnt++;
-                }
+                return nums[i];
             }
-            if(cnt==1)
-            {
-                return num;
-            }
-        }return -1;
+        }
+        return -1;
     }
 };
