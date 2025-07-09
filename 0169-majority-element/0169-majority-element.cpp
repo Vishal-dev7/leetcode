@@ -3,18 +3,39 @@ public:
     int majorityElement(vector<int>& nums) {
         int i;
         int n=nums.size();
-        map<int,int>mpp;
+        int cnt=0;
+        int el=0;
+        
         for(i=0;i<n;i++)
         {
-            mpp[nums[i]]++;
+           
+           if(cnt==0)
+           {
+              el=nums[i];
+              cnt=1;
+           }
+           else if(nums[i]==el)
+           {
+            cnt++;
+           }
+           else{
+            cnt--;
+           }
         }
-        for(auto it:mpp)
+        int  counter=0;
+        for(i=0;i<n;i++)
         {
-            if(it.second>n/2)
+            if(nums[i]==el)
             {
-                return it.first;
+                counter++;
             }
         }
+            if(counter>(n/2))
+            {
+                return el;
+            }
+        
+        
     
     return -1;
     }
