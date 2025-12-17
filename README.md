@@ -34,6 +34,7 @@
 | [0048-rotate-image](https://github.com/Vishal-dev7/leetcode/tree/master/0048-rotate-image) |
 | [0189-rotate-array](https://github.com/Vishal-dev7/leetcode/tree/master/0189-rotate-array) |
 | [0268-missing-number](https://github.com/Vishal-dev7/leetcode/tree/master/0268-missing-number) |
+| [1903-largest-odd-number-in-string](https://github.com/Vishal-dev7/leetcode/tree/master/1903-largest-odd-number-in-string) |
 ## Hash Table
 |  |
 | ------- |
@@ -91,4 +92,9 @@
 |  |
 | ------- |
 | [0151-reverse-words-in-a-string](https://github.com/Vishal-dev7/leetcode/tree/master/0151-reverse-words-in-a-string) |
+| [1903-largest-odd-number-in-string](https://github.com/Vishal-dev7/leetcode/tree/master/1903-largest-odd-number-in-string) |
+## Greedy
+|  |
+| ------- |
+| [1903-largest-odd-number-in-string](https://github.com/Vishal-dev7/leetcode/tree/master/1903-largest-odd-number-in-string) |
 <!---LeetCode Topics End-->
